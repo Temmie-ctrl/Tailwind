@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    width: 75%;
+    max-width: 100%;
+    background-color: #d9d9d9;
+    margin: 4rem auto;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.top-container {
+    display: flex; /* Make it a flex container */
+    flex-direction: row; /* Align items in a row */
+    justify-content: space-between; /* Distribute space between elements */
+    align-items: center; /* Vertically center the items */
+    gap: 1rem; /* Adjust gap as needed */
+}
+.bottom-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.total-subscribers-container,
+.average-open-rate-container,
+.average-click-rate-container {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-right: 10px;
+}
+
+.total-subscribers-container:last-child,
+.average-open-rate-container:last-child,
+.average-click-rate-container:last-child {
+    margin-right: 0;
+}
+
+
+.total-subscribers p,
+.avg-open-rate p,
+.avg-click-rate p {
+    font-size: 0.75rem;
+    color: #333;
+}
+
+.subscribers2,
+.percentage2,
+.clicks2 {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.subscribers2 .current h2,
+.percentage2 .current h2,
+.clicks2 .current h2 {
+    font-size: 1.5rem;
+    color: blue;
+    font-weight: 800;
+}
+
+.subscribers2 .previous p,
+.percentage2 .previous p,
+.clicks2 .previous p {
+    font-size: 0.75rem;
+    color: #888;
+}
+
+.percentage-indicator {
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 12px;
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+}
+
+.percentage-indicator.positive {
+    color: #34a853;
+    background-color: #e6f4ea;
+}
+
+.percentage-indicator.negative {
+    color: #ea4335;
+    background-color: #fce8e6;
+}
+
+.percentage-indicator .arrow {
+    font-size: 0.85rem;
+    margin-right: 4px;
+}
+
+.third-main-container {
+    width: 75%;
+    max-width: 100%;
+    background-color: #ffffff;
+    margin: 4rem auto;
+    padding: 2rem;
+    border: 0.03125rem solid gray;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-container,
+.second-container,
+.third-container,
+.right-container {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border: 0.03125rem solid gray;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Space between items inside each container */
+    position: relative;
+}
+
+/* Border radius adjustments for specific containers */
+.left-container {
+    border-radius: 8px 0 0 8px;
+}
+
+.right-container {
+    border-radius: 0 8px 8px 0;
+}
+
+.revenue p,
+.outstanding-invoices p,
+.overdue-invoices p,
+.outstanding-invoice-percentage p,
+.expenses p {
+    font-size: 0.75rem;
+    color: #333;
+}
+
+.invoice-percentage p,
+.expenses-percentage p {
+    font-size: 0.75rem;
+    color: red;
+
+}
+
+.revenue-amount h2,
+.invoice-amount h2,
+.outstanding-invoice-amount h2,
+.expenses-amount h2 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #333;
+}
+
+/* Styling for percentage indicators specific to third-main-container */
+.revenue-percentage,
+.invoice-percentage p,
+.expenses-percentage p,
+.outstanding-invoice-percentage p {
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 12px;
+    display: inline block;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: end;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    padding: 4px 8px;
+    border-radius: 12px;
+    right: 15px;
+    top: 20px;
+}
+
+.revenue-percentage.positive,
+.invoice-percentage.positive,
+.outstanding-invoice-percentage.positive,
+.expenses-percentage.positive {
+    color: #34a853;
+    background-color: #e6f4ea;
+}
+
+.revenue-percentage.negative,
+.invoice-percentage.negative,
+.outstanding-invoice-percentage.negative,
+.expenses-percentage.negative {
+    color: #ea4335;
+    background-color: #fce8e6;
+}
